@@ -2,20 +2,20 @@
 
 class SearchCest
 {
-    public function _before(AcceptanceTester $I)
-    {
-    }
+   
 
     // tests
     public function checkSearch(AcceptanceTester $I)
     {
     
         $I->amOnPage('');
-        $I->seeElement('#headerSearch');
-        $I->click('#headerSearch');
-        $I->fillField('#headerSearch','самокат');
-        $I->pressKey('#headerSearch',\Facebook\WebDriver\WebDriverKeys::ENTER);
-        $I->seeNumberOfElements('#offers_table > tbody > tr',43);
+        $I->see('Blouse');
+        $I->moveMouseOver('#homefeatured > li:nth-child(2) > div > div.left-block > div > a.product_img_link > img');
+        $I->click('#homefeatured > li:nth-child(2)');
+        $I->waitForElementVisible('#index > div.fancybox-overlay.fancybox-overlay-fixed');
+        $I->switchToIFrame('.fancybox-iframe');
+        $I->see('Blouse');
+        
     }
 
 
