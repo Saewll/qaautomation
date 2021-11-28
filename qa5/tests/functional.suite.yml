@@ -15,4 +15,13 @@ modules:
             browser: chrome
             window_size: 1440x900
         - \Helper\Functional
+        - \Helper\BaseHelper
+        - REST:
+           depends: PhpBrowser
+           url: 'api.izze.xyz/test/'
+         config:
+       PhpBrowser:
+           url: 'api.izze.xyz/test/'
+           headers:
+               Content-Type: application/json
     step_decorators: ~        
