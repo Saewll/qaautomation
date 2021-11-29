@@ -18,20 +18,29 @@ class UsersCest
     // tests
     public function createUser(FunctionalTester $I)
     {
+
+        $defaultSchema=[
+            
+        'id'=>'integer',
+        'email'=>'string',
+        'first_name'=>'string',
+        'last_name'=>'string',
+        'avatar'=>'string'
+            
+        ];
+
         $userData=[
-            'email'=>$I->getFaker()->mail,
             'name'=>$I->getFaker()->firstName,
-            'owner'=>'admin',
             'job'=>$I->getFaker()->company
 
         ];
         $I->haveHttpHeader('Content-Type', 'application/json');
-        $I->sendPost('/human',$userData);
+        $I->sendPost('/users',$userData);
         $I->seeResponseCodeIsSuccessful();
-        $I->seeResponseContainsJson(['status'=>'ok']);
-        $I->sendGet('people',$userData)
-
-
+        $user_id = $I->grabResponse();
+        $I->sendGet('/users', ['id'=>$user_id]);
+        $I->seeResponseCodeIsSuccessful();
+        $I->seeResponseMatchesJsonType($defaultSchema);
     }
 
 

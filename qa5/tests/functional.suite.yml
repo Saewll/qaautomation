@@ -9,19 +9,14 @@ actor: FunctionalTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://automationpractice.com/index.php
-            host: 'localhost'
-            port: 9515
-            browser: chrome
-            window_size: 1440x900
         - \Helper\Functional
         - \Helper\BaseHelper
         - REST:
            depends: PhpBrowser
-           url: 'api.izze.xyz/test/'
-         config:
-       PhpBrowser:
-           url: 'api.izze.xyz/test/'
-           headers:
-               Content-Type: application/json
+           url: 'https://reqres.in/api'
+    config:
+        PhpBrowser:
+            url: 'https://reqres.in/api'
+            headers:
+                Content-Type: application/json
     step_decorators: ~        

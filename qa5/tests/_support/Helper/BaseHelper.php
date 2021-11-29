@@ -7,8 +7,8 @@ use Faker\Factory;
 
 class BaseHelper extends \Codeception\Module
 {
-    public function getFaker($locale='ru_Ru'){
-    $faker=Factory::create('ru_RU');
+    public function getFaker($locale='en_EN'){
+    $faker=Factory::create('en_EN');
     $faker->addProvider(new CustomFakerProvider($faker));
     return $faker;
     }
