@@ -19,6 +19,20 @@ class FillFormCest
     // tests
     public function fillCard(AcceptanceTester $I,Example $data)
     {
+        $carYear=$I->getFaker()->year;
+        $carPrice=$I->getFaker()->price;
+        $
+
+
+
+
+
+
+
+
+
+
+
        $I->amOnPage(AdvertData::$URL);
        $I->click(AdvertData::$AdvertButton);
        $I->waitForElement(AdvertData::$categoryAuto);
