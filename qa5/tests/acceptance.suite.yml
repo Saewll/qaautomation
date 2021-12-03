@@ -8,7 +8,7 @@ actor: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: https://prostochizh.github.io/form/
+            url: https://avtoelon.uz/
             host: 'localhost'
             port: 9515
             browser: chrome
@@ -17,5 +17,5 @@ modules:
         - \Helper\BaseHelper
         - REST:
            depends: PhpBrowser
-           url: 'https://example.com/api/v1/'
+           url: 'https://avtoelon.uz/'
 step_decorators: ~        
