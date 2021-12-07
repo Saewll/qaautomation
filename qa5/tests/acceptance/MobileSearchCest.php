@@ -17,6 +17,7 @@ class MobileSearchCest
 
         $I->amOnPage(Listing::$URL);
         $I->click(Listing::$searchButton);
+        $I->waitForElementVisible(Search::$searchSubmitButton);
         $I->click(Search::$searchSubmitButton);
         $I->click(Listing::$sortSelector);
         $I->click(Listing::$sortSelectorFromMin);
