@@ -85,6 +85,7 @@ class ComposerStaticInitd59249736b7879a1f57c1281db1972a7
         'C' => 
         array (
             'Codeception\\PHPUnit\\' => 20,
+            'Codeception\\Module\\' => 19,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
         ),
@@ -233,6 +234,10 @@ class ComposerStaticInitd59249736b7879a1f57c1281db1972a7
         'Codeception\\PHPUnit\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeception/phpunit-wrapper/src',
+        ),
+        'Codeception\\Module\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elstc/codeception-mobileemulation/src',
         ),
         'Codeception\\Extension\\' => 
         array (

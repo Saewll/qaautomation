@@ -1,1 +1,1 @@
-tests\functional\UsersCest.php:createUser
+tests\acceptance\MobileSearchCest.php:searchFilter

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07147f5ba4b9829dc4483e0df7a11a1b",
+    "content-hash": "ce5fbc255cd8f5361f603f986a1b5e70",
     "packages": [
         {
             "name": "fzaninotto/faker",
@@ -715,6 +715,43 @@
                 }
             ],
             "time": "2020-11-10T18:47:58+00:00"
+        },
+        {
+            "name": "elstc/codeception-mobileemulation",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nojimage/codeception-mobileemulation.git",
+                "reference": "1c63f751a4f491b6c085542d3c237c22087d0098"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nojimage/codeception-mobileemulation/zipball/1c63f751a4f491b6c085542d3c237c22087d0098",
+                "reference": "1c63f751a4f491b6c085542d3c237c22087d0098",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codeception\\Module\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "WebDriver mobile emulation switcher for Codeception",
+            "support": {
+                "issues": "https://github.com/nojimage/codeception-mobileemulation/issues",
+                "source": "https://github.com/nojimage/codeception-mobileemulation/tree/v1.0.0"
+            },
+            "time": "2018-01-19T10:56:13+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

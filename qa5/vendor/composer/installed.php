@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9b89a8a9cd92addab1408d90b4bdf8d5c11c41bf',
+        'reference' => '83f9f1e150f7f22252f67e18bbd747dea83781e5',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9b89a8a9cd92addab1408d90b4bdf8d5c11c41bf',
+            'reference' => '83f9f1e150f7f22252f67e18bbd747dea83781e5',
             'dev_requirement' => false,
         ),
         'behat/gherkin' => array(
@@ -116,6 +116,15 @@
             'install_path' => __DIR__ . '/../doctrine/instantiator',
             'aliases' => array(),
             'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
+            'dev_requirement' => true,
+        ),
+        'elstc/codeception-mobileemulation' => array(
+            'pretty_version' => 'v1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../elstc/codeception-mobileemulation',
+            'aliases' => array(),
+            'reference' => '1c63f751a4f491b6c085542d3c237c22087d0098',
             'dev_requirement' => true,
         ),
         'facebook/webdriver' => array(
