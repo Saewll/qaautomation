@@ -6,7 +6,7 @@ class Search
     // include url of current page
     public static $URL = '';
 
-    public static $searchSubmitButton='/html/body/div[2]/form/div[2]/button';
+    public static $searchSubmitButton='//*[@class="search-submit-button"]';
     public static function route($param)
     {
         return static::$URL.$param;

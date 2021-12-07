@@ -6,12 +6,14 @@ use Page\Acceptance\Search;
 
 class MobileSearchCest
 {
-   
+    public $mobileEmulation = true;
+
 
     // tests
     public function searchFilter(AcceptanceTester $I)
     {
-        $I->resizeWindow(320, 480);
+
+        $I->emulationMobile('iPhone 8 Plus');
 
         $I->amOnPage(Listing::$URL);
         $I->click(Listing::$searchButton);
